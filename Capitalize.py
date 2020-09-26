@@ -1,0 +1,21 @@
+def solve(s):
+
+    sList=s.split(" ")
+    i=0
+    for s in sList:
+        sList[i]=s.capitalize()
+        i=i+1
+    return " ".join(sList)
+
+
+
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+    s = raw_input()
+
+    result = solve(s)
+
+    fptr.write(result + '\n')
+
+    fptr.close()
